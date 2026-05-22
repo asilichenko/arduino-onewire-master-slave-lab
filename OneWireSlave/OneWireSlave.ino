@@ -97,7 +97,7 @@ void testReadWriteByte() {
 }
 
 void loop() {
-  String testCase = "read_write_byte";
+  String testCase = "presence";
 
   if (testCase == "presence") testPresence();
   else if (testCase == "read_write_bit") testReadWriteBit();
