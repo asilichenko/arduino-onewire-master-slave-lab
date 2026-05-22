@@ -72,7 +72,7 @@ void testWriteByte(uint8_t data) {
   Serial.println("Wrote: 0b" + byteToBin(data) + "; 0x" + byteToHex(data));
 }
 
-void testReadByte(uint8_t dataOut) {
+void testWriteReadByte(uint8_t dataOut) {
   Serial.println();
 
   testWriteByte(dataOut);
@@ -85,7 +85,7 @@ void testReadByte(uint8_t dataOut) {
 }
 
 void loop() {
-  String testCase = "read_byte";
+  String testCase = "presence";
 
   if (testCase == "presence") testPresence();
 
@@ -96,7 +96,7 @@ void loop() {
   else if (testCase == "read_bit_0") testReadBit(0);
 
   else if (testCase == "wrtite_byte") testWriteByte(0xAC);
-  else if (testCase == "read_byte") testReadByte(0xAC);
+  else if (testCase == "write_read_byte") testWriteReadByte(0xAC);
 
   else Serial.println("Test case undefined: " + testCase);
 
