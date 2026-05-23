@@ -40,5 +40,5 @@ MIT License © 2026
 See [LICENSE](LICENSE) for details.
 
 # References
-- Article:
+- Article: [Understanding the 1-Wire Protocol with Arduino and Oscilloscope](https://medium.com/@asilichenko/understanding-the-1-wire-protocol-with-arduino-and-oscilloscope-279cbfe33ba5)
 - Arduino OneWire Lib: https://github.com/PaulStoffregen/OneWire
